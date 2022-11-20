@@ -21,9 +21,7 @@ body {
 .logo-section {
     width: 40%;
     background-image: url('pexels-pixabay-2150.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -33,6 +31,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 25%;
 }
 
 .logo h1 {
@@ -41,9 +41,48 @@ body {
 
 .content-section {
     background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.description {
     padding: 2rem;
 }
 
 .content-section h1 {
     text-align: center;
+    margin-top: 3rem;
+}
+
+form {
+    margin-top: 3rem;
+    background-color: var(--light-color2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    line-height: 2;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+button {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    border: 1px solid var(--light-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+a {
+    color: var(--dark-color);
+    font-weight: bold;
 }
