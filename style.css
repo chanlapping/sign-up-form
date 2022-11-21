@@ -65,12 +65,44 @@ form {
 label, input {
     display: block;
     width: 100%;
-    line-height: 2;
+    height: 2rem;
 }
 
 input, button {
     font-family: inherit;
     font-size: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    background-color: var(--light-color);
+    padding: 0 1rem;
+}
+
+input:focus {
+    outline: 2px solid var(--dark-color);
+}
+
+input:invalid {
+    outline: 2px solid var(--error-color);
+}
+
+#password.error, #confirm.error {
+    outline: 2px solid var(--error-color);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#password.error + span::after {
+    content: 'passwords do not match.';
+    font-size: 0.8em;
+    color: var(--error-color);
+    position: absolute;
+    top: 2rem;
+    right: 150px;
 }
 
 button {

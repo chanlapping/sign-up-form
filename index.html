@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -44,12 +45,15 @@
 
             <div>
                 <label for="phone">phone number:</label>
-                <input type="tel" name="phone" id="phone" required>
+                <input type="tel" name="phone" id="phone">
             </div>
 
             <div>
                 <label for="password">password:</label>
-                <input type="password" name="password" id="password" required>
+                <div class="password-wrapper">
+                    <input type="password" name="password" id="password" required>
+                    <span></span>
+                </div>
             </div>
 
             <div>
@@ -58,7 +62,7 @@
             </div>
 
             <div>
-                <button type="button">subscribe</button>
+                <button type="button" id="subscribe">subscribe</button>
                 <p>Already have an account? <a href="#">Log In</a>.</p>
             </div>
         </form>
